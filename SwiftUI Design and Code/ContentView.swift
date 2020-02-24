@@ -73,7 +73,8 @@ struct ContentView: View {
                 self.showCard.toggle()
                 }.gesture(DragGesture().onChanged{
                 value in self.viewState = value.translation
-                    self.show = true
+                                    self.show = true
+                    
                 }
                 .onEnded{
                     value in self.viewState = .zero
@@ -81,7 +82,7 @@ struct ContentView: View {
                     }
             )
             
-//            Used to show values when creating conditionals 
+//            Used to show values when creating conditionals
 //            Text("\(bottomState.height)")
 //                .offset(y: -300)
             
@@ -129,11 +130,11 @@ struct CardView: View {
         VStack {
             HStack {
                 VStack(alignment: .leading) {
-                    Text("Georgia State")
+                    Text("Recycling Center")
                         .font(.title)
                         .fontWeight(.semibold)
                         .foregroundColor(.white)
-                    Text("Influencer")
+                    Text("$5")
                         .foregroundColor(Color("accent"))
                 }
                 Spacer()
@@ -188,7 +189,7 @@ struct BottomCardView: View {
                 .frame(width: 40, height: 5)
                 .cornerRadius(3)
                 .opacity(0.1)
-            Text("This package will contain items that a marketer will produce. The layout of this is not final and will be iterated upon.")
+            Text("This text will have information on the pick up and will have an add to nightly route button")
                 .multilineTextAlignment(.center)
                 .font(.subheadline)
                 .lineSpacing(4)

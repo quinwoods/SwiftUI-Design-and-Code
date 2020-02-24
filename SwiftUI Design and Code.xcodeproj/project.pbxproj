@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		378D19EE240313E400D913E4 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378D19ED240313E400D913E4 /* MenuView.swift */; };
 		37AEA9C8240159D900192EB0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AEA9C7240159D900192EB0 /* AppDelegate.swift */; };
 		37AEA9CA240159D900192EB0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AEA9C9240159D900192EB0 /* SceneDelegate.swift */; };
 		37AEA9CC240159D900192EB0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AEA9CB240159D900192EB0 /* ContentView.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		378D19ED240313E400D913E4 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		37AEA9C4240159D900192EB0 /* SwiftUI Design and Code.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI Design and Code.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		37AEA9C7240159D900192EB0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		37AEA9C9240159D900192EB0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 				37AEA9C7240159D900192EB0 /* AppDelegate.swift */,
 				37AEA9C9240159D900192EB0 /* SceneDelegate.swift */,
 				37AEA9CB240159D900192EB0 /* ContentView.swift */,
+				378D19ED240313E400D913E4 /* MenuView.swift */,
 				37AEA9CD240159D900192EB0 /* Assets.xcassets */,
 				37AEA9D2240159D900192EB0 /* LaunchScreen.storyboard */,
 				37AEA9D5240159D900192EB0 /* Info.plist */,
@@ -147,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				37AEA9C8240159D900192EB0 /* AppDelegate.swift in Sources */,
+				378D19EE240313E400D913E4 /* MenuView.swift in Sources */,
 				37AEA9CA240159D900192EB0 /* SceneDelegate.swift in Sources */,
 				37AEA9CC240159D900192EB0 /* ContentView.swift in Sources */,
 			);
