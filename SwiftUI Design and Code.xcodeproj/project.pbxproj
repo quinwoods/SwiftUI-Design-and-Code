@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		376FE433240616F900BC5509 /* Mods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376FE432240616F900BC5509 /* Mods.swift */; };
+		376FE43F240619DA00BC5509 /* WorkSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 376FE435240619DA00BC5509 /* WorkSans-Regular.ttf */; };
+		376FE440240619DA00BC5509 /* WorkSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 376FE436240619DA00BC5509 /* WorkSans-Light.ttf */; };
+		376FE441240619DA00BC5509 /* WorkSans-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 376FE437240619DA00BC5509 /* WorkSans-ExtraBold.ttf */; };
+		376FE442240619DA00BC5509 /* WorkSans-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 376FE438240619DA00BC5509 /* WorkSans-ExtraLight.ttf */; };
+		376FE443240619DA00BC5509 /* WorkSans-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 376FE439240619DA00BC5509 /* WorkSans-Medium.ttf */; };
+		376FE444240619DA00BC5509 /* WorkSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 376FE43A240619DA00BC5509 /* WorkSans-SemiBold.ttf */; };
+		376FE445240619DA00BC5509 /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = 376FE43B240619DA00BC5509 /* OFL.txt */; };
+		376FE446240619DA00BC5509 /* WorkSans-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 376FE43C240619DA00BC5509 /* WorkSans-Thin.ttf */; };
+		376FE447240619DA00BC5509 /* WorkSans-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 376FE43D240619DA00BC5509 /* WorkSans-Black.ttf */; };
+		376FE448240619DA00BC5509 /* WorkSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 376FE43E240619DA00BC5509 /* WorkSans-Bold.ttf */; };
 		378D19EE240313E400D913E4 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378D19ED240313E400D913E4 /* MenuView.swift */; };
 		378D19F224048E0900D913E4 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378D19F124048E0900D913E4 /* Home.swift */; };
 		378D19F424049A9B00D913E4 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378D19F324049A9B00D913E4 /* HomeView.swift */; };
@@ -23,6 +34,17 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		376FE432240616F900BC5509 /* Mods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mods.swift; sourceTree = "<group>"; };
+		376FE435240619DA00BC5509 /* WorkSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "WorkSans-Regular.ttf"; sourceTree = "<group>"; };
+		376FE436240619DA00BC5509 /* WorkSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "WorkSans-Light.ttf"; sourceTree = "<group>"; };
+		376FE437240619DA00BC5509 /* WorkSans-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "WorkSans-ExtraBold.ttf"; sourceTree = "<group>"; };
+		376FE438240619DA00BC5509 /* WorkSans-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "WorkSans-ExtraLight.ttf"; sourceTree = "<group>"; };
+		376FE439240619DA00BC5509 /* WorkSans-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "WorkSans-Medium.ttf"; sourceTree = "<group>"; };
+		376FE43A240619DA00BC5509 /* WorkSans-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "WorkSans-SemiBold.ttf"; sourceTree = "<group>"; };
+		376FE43B240619DA00BC5509 /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
+		376FE43C240619DA00BC5509 /* WorkSans-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "WorkSans-Thin.ttf"; sourceTree = "<group>"; };
+		376FE43D240619DA00BC5509 /* WorkSans-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "WorkSans-Black.ttf"; sourceTree = "<group>"; };
+		376FE43E240619DA00BC5509 /* WorkSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "WorkSans-Bold.ttf"; sourceTree = "<group>"; };
 		378D19ED240313E400D913E4 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		378D19F124048E0900D913E4 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		378D19F324049A9B00D913E4 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -51,6 +73,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		376FE434240619DA00BC5509 /* Work_Sans */ = {
+			isa = PBXGroup;
+			children = (
+				376FE435240619DA00BC5509 /* WorkSans-Regular.ttf */,
+				376FE436240619DA00BC5509 /* WorkSans-Light.ttf */,
+				376FE437240619DA00BC5509 /* WorkSans-ExtraBold.ttf */,
+				376FE438240619DA00BC5509 /* WorkSans-ExtraLight.ttf */,
+				376FE439240619DA00BC5509 /* WorkSans-Medium.ttf */,
+				376FE43A240619DA00BC5509 /* WorkSans-SemiBold.ttf */,
+				376FE43B240619DA00BC5509 /* OFL.txt */,
+				376FE43C240619DA00BC5509 /* WorkSans-Thin.ttf */,
+				376FE43D240619DA00BC5509 /* WorkSans-Black.ttf */,
+				376FE43E240619DA00BC5509 /* WorkSans-Bold.ttf */,
+			);
+			path = Work_Sans;
+			sourceTree = "<group>";
+		};
 		37AEA9BB240159D900192EB0 = {
 			isa = PBXGroup;
 			children = (
@@ -77,10 +116,12 @@
 				378D19F124048E0900D913E4 /* Home.swift */,
 				378D19F5240583B900D913E4 /* UpdateList.swift */,
 				37933C8C2405F3D00022A239 /* RingView.swift */,
+				376FE432240616F900BC5509 /* Mods.swift */,
 				378D19F724058ECC00D913E4 /* UpdateStore.swift */,
 				378D19F324049A9B00D913E4 /* HomeView.swift */,
 				378D19F924059E8D00D913E4 /* TabBar.swift */,
 				37AEA9CD240159D900192EB0 /* Assets.xcassets */,
+				376FE434240619DA00BC5509 /* Work_Sans */,
 				37AEA9D2240159D900192EB0 /* LaunchScreen.storyboard */,
 				37AEA9D5240159D900192EB0 /* Info.plist */,
 				37AEA9CF240159D900192EB0 /* Preview Content */,
@@ -154,9 +195,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				376FE447240619DA00BC5509 /* WorkSans-Black.ttf in Resources */,
+				376FE445240619DA00BC5509 /* OFL.txt in Resources */,
+				376FE442240619DA00BC5509 /* WorkSans-ExtraLight.ttf in Resources */,
 				37AEA9D4240159D900192EB0 /* LaunchScreen.storyboard in Resources */,
 				37AEA9D1240159D900192EB0 /* Preview Assets.xcassets in Resources */,
 				37AEA9CE240159D900192EB0 /* Assets.xcassets in Resources */,
+				376FE446240619DA00BC5509 /* WorkSans-Thin.ttf in Resources */,
+				376FE43F240619DA00BC5509 /* WorkSans-Regular.ttf in Resources */,
+				376FE443240619DA00BC5509 /* WorkSans-Medium.ttf in Resources */,
+				376FE444240619DA00BC5509 /* WorkSans-SemiBold.ttf in Resources */,
+				376FE448240619DA00BC5509 /* WorkSans-Bold.ttf in Resources */,
+				376FE441240619DA00BC5509 /* WorkSans-ExtraBold.ttf in Resources */,
+				376FE440240619DA00BC5509 /* WorkSans-Light.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -168,6 +219,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				37933C8D2405F3D00022A239 /* RingView.swift in Sources */,
+				376FE433240616F900BC5509 /* Mods.swift in Sources */,
 				378D19FA24059E8D00D913E4 /* TabBar.swift in Sources */,
 				37AEA9C8240159D900192EB0 /* AppDelegate.swift in Sources */,
 				378D19F6240583B900D913E4 /* UpdateList.swift in Sources */,

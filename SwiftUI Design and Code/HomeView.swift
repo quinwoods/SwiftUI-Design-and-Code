@@ -16,7 +16,8 @@ struct HomeView: View {
         VStack {
             HStack {
                 Text("Watching")
-                    .font(.system(size: 28, weight: .bold, design: .rounded))
+//                    .font(.system(size: 28, weight: .bold, design: .rounded))
+                    .modifier(customFontMod(size: 28))
                 
                 Spacer()
                 
@@ -37,20 +38,11 @@ struct HomeView: View {
             }.padding(.horizontal)
                 .padding(.leading, 20)
                 .padding(.top, 30)
-            HStack(spacing: 12.0) {
-                RingView(color1: #colorLiteral(red: 0.3098039329, green: 0.01568627544, blue: 0.1294117719, alpha: 1), color2: #colorLiteral(red: 0.2588235438, green: 0.7568627596, blue: 0.9686274529, alpha: 1), width: 44, height: 44, percent: 68, show: .constant(true))
-                VStack(alignment: .leading, spacing: 4.0) {
-                    Text("7 minutes left")
-                        .font(.subheadline).fontWeight(.bold)
-                    Text("Watched 10 minutes today").font(.caption)
-                }
-                   
+            ScrollView(.horizontal, showsIndicators: false) {
+                WatchRingsView()
+                    .padding()
+                    .padding(.bottom, 30)
             }
-            .padding(8)
-                               .background(Color.white)
-                               .cornerRadius(20)
-                               .shadow(color: Color.black.opacity(0.2), radius: 20, x: 0, y: 20)
-                               .shadow(color: Color.black.opacity(0.1), radius: 1, x: 0, y: 1)
             
             
             ScrollView(.horizontal, showsIndicators: false) {
@@ -124,3 +116,38 @@ let sectionData = [
 
 
 
+
+struct WatchRingsView: View {
+    var body: some View {
+        HStack(spacing: 30) {
+            HStack(spacing: 12.0) {
+                RingView(color1: #colorLiteral(red: 0.3098039329, green: 0.01568627544, blue: 0.1294117719, alpha: 1), color2: #colorLiteral(red: 0.2588235438, green: 0.7568627596, blue: 0.9686274529, alpha: 1), width: 44, height: 44, percent: 68, show: .constant(true))
+                VStack(alignment: .leading, spacing: 4.0) {
+                    Text("7 minutes left").modifier(fontMod(style: .subheadline))
+                    
+                    Text("Watched 10 minutes today").modifier(fontMod())
+                }
+            }
+            .padding(8)
+            .background(Color.white)
+            .cornerRadius(20)
+            .modifier(shadowMod())
+            HStack(spacing: 12.0) {
+                RingView(color1: #colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1), color2: #colorLiteral(red: 0.9607843161, green: 0.7058823705, blue: 0.200000003, alpha: 1), width: 32, height: 32, percent: 72, show: .constant(true))
+                
+            }
+            .padding(8)
+            .background(Color.white)
+            .cornerRadius(20)
+            .modifier(shadowMod())
+            HStack(spacing: 12.0) {
+                RingView(color1: #colorLiteral(red: 0.4666666687, green: 0.7647058964, blue: 0.2666666806, alpha: 1), color2: #colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1), width: 32, height: 32, percent: 34, show: .constant(true))
+                
+            }
+            .padding(8)
+            .background(Color.white)
+            .cornerRadius(20)
+            .modifier(shadowMod())
+        }
+    }
+}
