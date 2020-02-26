@@ -13,13 +13,14 @@ struct RingView: View {
     var color2 = #colorLiteral(red: 0.3411764801, green: 0.6235294342, blue: 0.1686274558, alpha: 1)
     var width: CGFloat = 120
     var height: CGFloat = 120
-    var percent: CGFloat = 30
+    var percent: CGFloat = 88
+    @Binding var show : Bool
     
     
     var body: some View {
         
         let multiplier = width / 44
-        let progress = percent / 100
+        let progress = 1 - (percent / 100)
             
        return ZStack {
             Circle()
@@ -28,7 +29,7 @@ struct RingView: View {
                 .frame(width: width, height: height)
                     
             Circle()
-                .trim(from: 1 - progress, to : 1)
+                .trim(from: show ? progress : 1, to : 1)
                 .stroke(LinearGradient(gradient: Gradient(colors: [Color(color1 ), Color(color2)]), startPoint: .topTrailing, endPoint: .bottomTrailing),
                         style: StrokeStyle(lineWidth: 5 * multiplier, lineCap: .round, lineJoin: .round, miterLimit: .infinity, dash: [20,0], dashPhase: 0)
             )
@@ -40,6 +41,9 @@ struct RingView: View {
             Text("\(Int(percent))%")
                 .font(.system(size: 14 * multiplier))
                 .fontWeight(.bold)
+                .onTapGesture {
+                    self.show.toggle()
+        }
         }
         
     }
@@ -47,7 +51,7 @@ struct RingView: View {
 
 struct RingView_Previews: PreviewProvider {
     static var previews: some View {
-        RingView()
+        RingView(show: .constant(true))
     }
 }
 
