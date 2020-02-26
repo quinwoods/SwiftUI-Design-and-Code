@@ -3,7 +3,7 @@
 //  SwiftUI Design and Code
 //
 //  Created by Quin’darius Lyles-Woods on 2/24/20.
-//  Copyright © 2020 Quin’darius Lyles-Woods. All rights reserved.
+//  Copyright © 2020 Quin’darius Lyles-Woods. Al l rights reserved.
 //
 
 import SwiftUI
@@ -105,6 +105,7 @@ Section(title: "Prototype designs in Swift UI", text: "18 Sections", logo: "Logo
 Section(title: "Deployment Practice", text: "15 Sections", logo: "Logo1", image: Image(uiImage: #imageLiteral(resourceName: "Card6")), color: Color(#colorLiteral(red: 0.9098039269, green: 0.4784313738, blue: 0.6431372762, alpha: 1))),
 Section(title: "Swift Advanced", text: "30 Sections", logo: "Logo1", image: Image(uiImage: #imageLiteral(resourceName: "Card1")), color: Color(#colorLiteral(red: 0.1764705926, green: 0.4980392158, blue: 0.7568627596, alpha: 1))),
 ]
+
 
 
 
