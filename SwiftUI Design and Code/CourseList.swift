@@ -9,15 +9,14 @@
 import SwiftUI
 
 struct CourseList: View {
-    var body: some View {
+    var body : some View {
         VStack {
             CourseView()
         }
-        
     }
 }
 
-struct CourseList_Previews: PreviewProvider {
+struct CourseList_Previews: PreviewProvider{
     static var previews: some View {
         CourseList()
     }
@@ -29,60 +28,68 @@ struct CourseView: View {
     var body: some View {
         ZStack(alignment: .top) {
             VStack(alignment: .leading, spacing: 30.0) {
-                Text("Take your SwiftUI app to the app store with advanced techniques like api data, packages and cms")
+                Text("Take your SwiftUI app to the App Store with advanced techniques like API data, packages and CMS.")
+                
                 Text("About this course")
                     .font(.title).bold()
-                Text("This course text is just something that I am making up as we speak right now some people think its hard to think of things to say but if you just. ")
-                Text("Type exacatly what you are thinking then you have plenty of material its not the longest and thoughtful thoughts but it is definitly better than nothing. I really enjoy listening to Sidewalk by the weekend")
+                
+                Text("This course is unlike any other. We care about design and want to make sure that you get better at it in the process. It was written for designers and developers who are passionate about collaborating and building real apps for iOS and macOS. While it's not one codebase for all apps, you learn once and can apply the techniques and controls to all platforms with incredible quality, consistency and performance. It's beginner-friendly, but it's also packed with design tricks and efficient workflows for building great user interfaces and interactions.")
+                
+                Text("Minimal coding experience required, such as in HTML and CSS. Please note that Xcode 11 and Catalina are essential. Once you get everything installed, it'll get a lot friendlier! I added a bunch of troubleshoots at the end of this page to help you navigate the issues you might encounter.")
             }
             .padding(30)
-                .offset(y: show ? 460 : 0)
-            .frame(maxWidth: show ? .infinity : screen.width - 60 , maxHeight:  show  ? .infinity : 220, alignment: .top)
-                 .animation(.spring(response: 0.5, dampingFraction: 0.6, blendDuration: 0))
-            .opacity(show ? 1: 0)
-            
+            .frame(maxWidth: show ? .infinity : screen.width - 60, maxHeight: show ? .infinity : 280, alignment: .top)
+            .offset(y: show ? 460 : 0)
             .background(Color.white)
             .clipShape(RoundedRectangle(cornerRadius: 30, style: .continuous))
             .shadow(color: Color.black.opacity(0.2), radius: 20, x: 0, y: 20)
+            .opacity(show ? 1 : 0)
             
             VStack {
                 HStack(alignment: .top) {
                     VStack(alignment: .leading, spacing: 8.0) {
-                        Text("SwiftUI Advanced").font(.system(size: 24, weight: .bold)).foregroundColor(.white)
-                        Text("20 Sections").foregroundColor(.white).opacity(0.7)
+                        Text("SwiftUI Advanced")
+                            .font(.system(size: 24, weight: .bold))
+                            .foregroundColor(.white)
+                        Text("20 Sections")
+                            .foregroundColor(Color.white.opacity(0.7))
                     }
                     Spacer()
                     ZStack {
                         Image(uiImage: #imageLiteral(resourceName: "Logo1"))
-                            .opacity(show ? 0 :1 )
-                        Image(systemName: "xmark")
-                            .font(.system(size: 16, weight: .medium))
-                            .foregroundColor(Color.white)
-                            .frame(width: 36, height: 36)
-                            .background(Color.black)
-                            .clipShape(Circle())
-                            .opacity(show ? 1 : 0)
+                            .opacity(show ? 0 : 1)
+                        
+                        VStack {
+                            Image(systemName: "xmark")
+                                .font(.system(size: 16, weight: .medium))
+                                .foregroundColor(.white)
+                        }
+                        .frame(width: 36, height: 36)
+                        .background(Color.black)
+                        .clipShape(Circle())
+                        .opacity(show ? 1 : 0)
                     }
                 }
                 Spacer()
-                Image(uiImage: #imageLiteral(resourceName: "Card6"))
+                Image(uiImage: #imageLiteral(resourceName: "Card2"))
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(maxWidth: .infinity)
                     .frame(height: 140, alignment: .top)
             }
-            .padding(show ? 60 : 20)
-                // .frame(width: show ? screen.width : screen.width - 60, height: show ? screen.height : 280 )
-                .frame(maxWidth: show ? .infinity : screen.width - 60, maxHeight: show ? 460 : 280)
-                .background(Color(#colorLiteral(red: 0.9098039269, green: 0.4784313738, blue: 0.6431372762, alpha: 1)))
-                .clipShape(RoundedRectangle(cornerRadius: 30, style: .continuous))
-                .shadow(color:  Color(#colorLiteral(red: 0.9098039269, green: 0.4784313738, blue: 0.6431372762, alpha: 1)).opacity(0.3), radius: 20, x: 0, y: 20)
-                .animation(.spring(response: 0.5, dampingFraction: 0.6, blendDuration: 0))
-                .onTapGesture {
-                    self.show.toggle()
+            .padding(show ? 30 : 20)
+            .padding(.top, show ? 30 : 0)
+    //        .frame(width: show ? screen.width : screen.width - 60, height: show ? screen.height : 280)
+            .frame(maxWidth: show ? .infinity : screen.width - 60, maxHeight: show ? 460 : 280)
+            .background(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
+            .clipShape(RoundedRectangle(cornerRadius: 30, style: .continuous))
+            .shadow(color: Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)).opacity(0.3), radius: 20, x: 0, y: 20)
+            
+            .onTapGesture {
+                self.show.toggle()
             }
-            .edgesIgnoringSafeArea(.all)
         }
-        
+        .animation(.spring(response: 0.5, dampingFraction: 0.6, blendDuration: 0))
+        .edgesIgnoringSafeArea(.all)
     }
 }
